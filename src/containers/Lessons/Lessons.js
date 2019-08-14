@@ -5,7 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-import InboxIcon from '@material-ui/icons/Inbox';
+import MoodIcon from '@material-ui/icons/Mood';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import Container from '@material-ui/core/Container';
 
@@ -27,25 +27,31 @@ export default function SimpleList() {
       <List component="nav" aria-label="main mailbox folders">
         <ListItem button>
           <ListItemIcon>
-            <InboxIcon />
+            <MoodIcon />
           </ListItemIcon>
           <ListItemText primary="Inbox" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <DraftsIcon />
+            <MoodIcon />
           </ListItemIcon>
           <ListItemText primary="Drafts" />
         </ListItem>
       </List>
       <Divider />
       <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
-          <ListItemText primary="Trash" />
+      <ListItem button>
+          <ListItemIcon>
+            <MoodIcon />
+          </ListItemIcon>
+          <ListItemText primary="Inbox" />
         </ListItem>
-        <ListItemLink href="#simple-list">
-          <ListItemText primary="Spam" />
-        </ListItemLink>
+        <ListItem button>
+          <ListItemIcon>
+            <MoodIcon />
+          </ListItemIcon>
+          <ListItemText primary="Drafts" />
+        </ListItem>
       </List>
     </Container>
   );
