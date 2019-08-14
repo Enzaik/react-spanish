@@ -1,13 +1,12 @@
 import React from 'react';
 
-import AppBar from './containers/AppBar/AppBar';
+import Layout from './hoc/Layout/Layout';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <AppBar />
-      {/* { <SideDrawer />} */}
+      <Layout />
     </div>
   );
 }
